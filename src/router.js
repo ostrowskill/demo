@@ -37,22 +37,31 @@ export default new Router({
       // for presentation change HOME -> USER
       path: '/',
       name: 'home',
-      component: User
-    },
-    {
-      path: '/user',
-      name: 'user',
-      //beforeEnter: requireAuth,
-      component: () => import('./views/User.vue'),
+      component: User,
+      //delete after demo
       children: [
-        { path:'/user/', name: 'dashboard', component: userDashoard },
-        { path:'/user/charts', name: 'charts', component: Charts },
-        { path:'/user/settings', name: 'settings', component: Settings },
-        { path: '/user/performance', name: 'performance', component: Performance},
-        { path: '/user/buisness', name: 'buisness', component: Buisness},
-        { path: '/user/devops', name: 'devops', component: DevOps},
+        { path:'/', name: 'dashboard', component: userDashoard },
+        { path:'/charts', name: 'charts', component: Charts },
+        { path:'/settings', name: 'settings', component: Settings },
+        { path: '/performance', name: 'performance', component: Performance},
+        { path: '/buisness', name: 'buisness', component: Buisness},
+        { path: '/devops', name: 'devops', component: DevOps},
       ]
     },
+    // {
+    //   path: '/user',
+    //   name: 'user',
+    //   //beforeEnter: requireAuth,
+    //   component: () => import('./views/User.vue'),
+    //   children: [
+    //     { path:'/user/', name: 'dashboard', component: userDashoard },
+    //     { path:'/user/charts', name: 'charts', component: Charts },
+    //     { path:'/user/settings', name: 'settings', component: Settings },
+    //     { path: '/user/performance', name: 'performance', component: Performance},
+    //     { path: '/user/buisness', name: 'buisness', component: Buisness},
+    //     { path: '/user/devops', name: 'devops', component: DevOps},
+    //   ]
+    // },
     {
       path: '/callback',
       name: 'callback',

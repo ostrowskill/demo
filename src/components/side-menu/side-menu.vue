@@ -27,7 +27,7 @@
 
       <ul class="side-nav">
         <li class="side-nav-item">
-          <router-link to="/user/" exact class="side-nav-item-link"
+          <router-link to="/" exact class="side-nav-item-link"
           :style="{color: f_color__primary}">
             <i class="fas fa-chart-bar"></i>
             <p class="item-name">Main dashboard</p>
@@ -35,7 +35,7 @@
         </li>
         <li class="side-nav-item">
           <router-link
-            to="/user/performance"
+            to="/performance"
             exact
             :style="{color: f_color__primary}"
             class="side-nav-item-link"
@@ -46,7 +46,7 @@
         </li>
         <li class="side-nav-item">
           <router-link
-            to="/user/devops"
+            to="/devops"
             exact
             :style="{color: f_color__primary}"
             class="side-nav-item-link"
@@ -57,7 +57,7 @@
         </li>
         <li class="side-nav-item">
           <router-link
-            to="/user/buisness"
+            to="/buisness"
             exact
             :style="{color: f_color__primary}"
             class="side-nav-item-link"
@@ -88,7 +88,7 @@
         </li>
         <li class="side-nav-item">
           <router-link
-            to="/user/settings"
+            to="/settings"
             exact
             :style="{color: f_color__primary}"
             class="side-nav-item-link"
