@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c4bf4"],{"3bc2":function(t,e,n){"use strict";n.r(e);var c=function(){var t=this,e=t.$createElement;t._self._c;return t._m(0)},r=[function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"notauthorized-container"},[n("h1",[t._v("You're not authorized")])])}],u=n("2877"),a={},o=Object(u["a"])(a,c,r,!1,null,null,null);e["default"]=o.exports}}]);
+//# sourceMappingURL=chunk-2d0c4bf4.b2a1097f.js.map
