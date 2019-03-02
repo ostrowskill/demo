@@ -1,0 +1,17 @@
+@import '@/scss/_variables.scss';
+
+.db-name {
+    margin-left: 1em;
+    //height: 6vh;
+    //width: 75px;
+    text-align: center;
+    line-height: 6vh;
+    padding: 0 1em;
+}
+
+.router-link-active {
+    .db-name {
+        color: $color-primary-gold !important;
+
+    }
+}

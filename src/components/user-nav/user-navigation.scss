@@ -1,0 +1,105 @@
+@import '../../scss/variables';
+
+.user-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5em;
+  height: 8vh;
+}
+
+.logo-type {
+
+  display: flex;
+
+  .logo {
+    max-width: 35px;
+  }
+
+  .type {
+    display: none;
+  }
+}
+
+
+// hamburger ---------------------------------------------------
+.hamburger {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  &.active .stick {
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .stick {
+    width: 25px;
+    height: 4px;
+    background: $color-primary-gold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 4px;
+      background: $color-primary-gold;
+      transition: 0.3s;
+    }
+
+    &::before {
+      top: -11px;
+    }
+
+    &::after {
+      top: 11px;
+    }
+  }
+}
+
+.right-side-nav {
+  align-items: center;
+}
+
+// ---------------------------------------------------
+
+@media screen and (min-width: 960px) {
+  .hamburger {
+    display: none;
+
+  }
+
+  .logo-type {
+    order: 1;
+    //max-width: 120px;
+    .logo {
+      max-width: 45px;
+    }
+    .type {
+      display: initial;
+      margin-left: 1em;
+      max-width: 90px;
+    }
+  }
+
+  .drop-down {
+    order: 2;
+  }
+}
